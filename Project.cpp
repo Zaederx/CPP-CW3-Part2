@@ -52,7 +52,7 @@ void Project::setSupervisorId(const string &supervisorId) {
 	this->supervisorId = supervisorId;
 }
 
-int Project::getSvMult() const {
+int Project::getMult() const {
 	return svMult;
 }
 

@@ -18,7 +18,7 @@ public:
 	Student& operator=(const Student &other);
 	Student& operator=(Student &&other);
 
-	string getId() {
+	string getId() const {
 		return id;
 	}
 
@@ -28,10 +28,21 @@ public:
 
 	std::vector getChoices ();
 
-	void setChoice(int i, int choice);
+	void setChoice(int preferenceNum, int choice);
+	int getChoice(int preferenceNum);
+
+	int getAssignedProject() const {
+		return assignedProject;
+	}
+
+	void setAssignedProject(int assignedProject) {
+		this->assignedProject = assignedProject;
+	}
+
 private:
 	string id;
 	std::vector choices;
+	int assignedProject;
 
 };
 

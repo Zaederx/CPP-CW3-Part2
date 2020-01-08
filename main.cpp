@@ -1,12 +1,42 @@
 #include "Project.h"
 #include "Staff.h"
 #include "Student.h"
-#include "vector"
+#include <vector>
 #include <iostream>
 #include <fstream>
 
+
 using namespace std;
 
+void allocate (std::vector<Staff> staff, std::vector<Project> projects, std::vector<Student> students);
+void printAllocations (vector<Student> students);
+
+void allocate (std::vector<Staff> staff, std::vector<Project> projects, std::vector<Student> students) {
+	int choiceNum = 1;
+	for (Student s : students) {
+		for (int i = 1; i < 5; i++) {
+			int choiceId = s.getChoice(i);
+			for (Project p : projects) {
+				if (p.getProjectId() == choiceId) {
+					if (p.getCurrentFill() < p.getMult()){
+						//TODO - SET STUDENT ASS ASSIGNED TO PROJ
+						s.setAssignedProject(choiceId);
+						//TODO - SET PROJECT AS ASSIGNED TO STUDENT
+						p.incrementCurrentFill();
+					}
+				}
+			}
+		}
+	}
+}
+
+void printAllocations (vector<Student> students) {
+
+	for (Student s: students ) {
+		cout << s;
+	}
+
+}
 int main (int argc, char const *argv[]) {
 
 	fstream staffFile(argv[1]);
@@ -70,6 +100,12 @@ int main (int argc, char const *argv[]) {
 
 		studentList.push_back(s);
 
+		allocate (staffList, projectList, studentList);
+
+		printAllocations(studentList);
 	}
 
 }
+
+
+

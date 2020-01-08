@@ -37,12 +37,23 @@ Student::Student() {
 //	// TODO Auto-generated method stub
 //}
 
+friend ostream& operator<<(ostream os, const Student s) {
+	os << s.getId() << " " << s.getAssignedProject();
+	return os;
+}
+
 std::vector Student::getChoices () {
 	return choices;
 }
 
+//where i is the order pf preference 1.e. 1 - 4
+//not starting from zero
 void Student::setChoice(int i, int choice) {
 	choices[i-1] = choice;
+}
+
+int Student::getChoice(int i) {
+	return choices[i-1];
 }
 
 

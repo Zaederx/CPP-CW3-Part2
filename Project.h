@@ -5,6 +5,9 @@
  *      Author: zacharyishmael
  */
 #include <string>
+#include <vector>
+#include "Student.h"
+
 using namespace std;
 #ifndef PROJECT_H_
 #define PROJECT_H_
@@ -26,7 +29,7 @@ public:
 
 	void setSupervisorId(const string &supervisorId);
 
-	int getSvMult() const ;
+	int getMult() const ;
 
 	void setSvMult(int svMult);
 
@@ -34,12 +37,25 @@ public:
 
 	void setTitle(const string &title);
 
+	int getCurrentFill() const {
+		return currentFill;
+	}
+
+	void setCurrentFill(int currentFill) {
+		this->currentFill = currentFill;
+	}
+
+	void incrementCurrentFill() {
+		this->currentFill++;
+	}
+
 private:
 	string projectId;
 	string supervisorId;
 	int svMult;//supervisorMutiplicity
 	string title;
-
+	int currentFill; // how many people assiged
+	vector<Student> studentsAssigned;
 };
 
 #endif /* PROJECT_H_ */

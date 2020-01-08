@@ -24,6 +24,8 @@ public:
 
 	void setSupervisionLoad(int load);
 	int getSupervisionLoad();
+	void setCurrentLoad(int currentLoad);
+	int getCurrentLoad();
 
 //	map<string,int> getProjects();
 //	void setProjects(std::map projects);
@@ -31,6 +33,7 @@ public:
 private:
 	string id;
 	int supervisionLoad;
+	int currentLoad;
 //	map<string,int> projects;
 };
 

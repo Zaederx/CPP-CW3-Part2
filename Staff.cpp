@@ -47,6 +47,12 @@ void Staff::setSupervisionLoad(int load) {
 int Staff::getSupervisionLoad(){
 	return supervisionLoad;
 }
+void Staff::setCurrentLoad(int load) {
+	currentLoad = load;
+}
+int Staff::getCurrentLoad() {
+	return currentLoad;
+}
 //map<string,int> Staff::getProjects() {
 //	return projects;
 //}
