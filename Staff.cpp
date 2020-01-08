@@ -7,10 +7,10 @@
 
 #include "Staff.h"
 
-Staff::Staff() {
-	// TODO Auto-generated constructor stub
-
-}
+//Staff::Staff() {
+//	// TODO Auto-generated constructor stub
+//
+//}
 //
 //Staff::~Staff() {
 //	// TODO Auto-generated destructor stub

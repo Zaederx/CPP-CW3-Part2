@@ -14,12 +14,12 @@ using namespace std;
 
 class Project {
 public:
-	Project();
-	virtual ~Project();
-	Project(const Project &other);
-	Project(Project &&other);
-	Project& operator=(const Project &other);
-	Project& operator=(Project &&other);
+//	Project();
+//	virtual ~Project();
+//	Project(const Project &other);
+//	Project(Project &&other);
+//	Project& operator=(const Project &other);
+//	Project& operator=(Project &&other);
 
 	int getProjectId();
 

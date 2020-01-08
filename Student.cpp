@@ -10,10 +10,10 @@
 #include <iostream>
 using namespace std;
 
-Student::Student() {
-	// TODO Auto-generated constructor stub
-
-}
+//Student::Student() {
+//	// TODO Auto-generated constructor stub
+//
+//}
 
 //Student::~Student() {
 //	// TODO Auto-generated destructor stub

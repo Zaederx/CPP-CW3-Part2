@@ -7,14 +7,14 @@
 
 #include "Project.h"
 
-Project::Project() {
-	// TODO Auto-generated constructor stub
-
-}
-
-Project::~Project() {
-	// TODO Auto-generated destructor stub
-}
+//Project::Project() {
+//	// TODO Auto-generated constructor stub
+//
+//}
+//
+//Project::~Project() {
+//	// TODO Auto-generated destructor stub
+//}
 //
 //Project::Project(const Project &other) {
 //	// TODO Auto-generated constructor stub

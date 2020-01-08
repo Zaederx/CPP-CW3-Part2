@@ -12,12 +12,12 @@ using namespace std;
 
 class Staff {
 public:
-	Staff();
-	virtual ~Staff();
-	Staff(const Staff &other);
-	Staff(Staff &&other);
-	Staff& operator=(const Staff &other);
-	Staff& operator=(Staff &&other);
+//	Staff();
+//	virtual ~Staff();
+//	Staff(const Staff &other);
+//	Staff(Staff &&other);
+//	Staff& operator=(const Staff &other);
+//	Staff& operator=(Staff &&other);
 
 	void setId(string id);
 	string getId();

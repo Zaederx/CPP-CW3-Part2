@@ -12,12 +12,12 @@ using namespace std;
 
 class Student {
 public:
-	Student();
-	~Student();
-	Student(const Student &other);
-	Student(Student &&other);
-	Student& operator=(const Student &other);
-	Student& operator=(Student &&other);
+//	Student();
+//	~Student();
+//	Student(const Student &other);
+//	Student(Student &&other);
+//	Student& operator=(const Student &other);
+//	Student& operator=(Student &&other);
 
 	string getId() const {
 		return id;
