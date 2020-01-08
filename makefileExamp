@@ -1,0 +1,32 @@
+# First, as you can see, any line that begins with # is a comment.
+#
+# Second, make sure your makefile is actually called "makefile" or
+# "Makefile". Don't call it by any other name, or with any suffix
+# like Makefile.txt. It won't work.
+
+# In each of the below, the line with a colon specifies a target to compile,
+# and its dependencies are listed after the colon. It means if anything in
+# the dependency list is changed, that target will be recompiled.
+# The next line is the command to compile that target (or indeed to do 
+# anything).
+# Note that the second line MUST BEGIN WITH A TAB (NOT SPACES).
+
+# This simply allows "make all" to work
+All: all
+all: main
+
+# In this simple example, it compiles one cpp file to an executable.
+# The assignment specifies your executable must be called "main".
+# The -o flag is used to control the output filename
+main: Something.cpp
+	g++ Something.cpp -o main
+
+# See the other sample file, or indeed the makefiles for previous assignments,
+# for more complicated examples.
+
+# Some cleanup functions, invoked by typing "make clean" or "make deepclean"
+deepclean: 
+	rm -f *~ *.o main *.exe *.stackdump
+
+clean:
+	-rm -f *~ *.o *.stackdump

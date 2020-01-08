@@ -35,4 +35,12 @@ Student& Student::operator=(Student &&other) {
 	// TODO Auto-generated method stub
 }
 
+std::vector getChoices () {
+	return choices;
+}
+
+void setChoice(int i, int choice) {
+	choices[i] = choice;
+}
+
 
