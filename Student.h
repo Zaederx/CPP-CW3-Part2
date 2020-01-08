@@ -18,12 +18,12 @@ public:
 	Student& operator=(const Student &other);
 	Student& operator=(Student &&other);
 
+
 	std::vector getChoices ();
-
 	void setChoice(int i, int choice);
-
 private:
 std::vector choices;
+
 };
 
 #endif /* STUDENT_H_ */

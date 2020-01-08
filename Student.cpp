@@ -6,6 +6,8 @@
  */
 
 #include "Student.h"
+#include <vector>
+
 
 Student::Student() {
 	// TODO Auto-generated constructor stub
@@ -35,11 +37,11 @@ Student& Student::operator=(Student &&other) {
 	// TODO Auto-generated method stub
 }
 
-std::vector getChoices () {
+std::vector Student::getChoices () {
 	return choices;
 }
 
-void setChoice(int i, int choice) {
+void Student::setChoice(int i, int choice) {
 	choices[i] = choice;
 }
 
