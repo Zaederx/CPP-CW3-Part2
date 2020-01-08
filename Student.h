@@ -40,7 +40,7 @@ public:
 		this->assignedProject = assignedProject;
 	}
 
-	friend ostream& operator<<(ostream os, const Student s);
+	friend ostream& operator<<(ostream& os, const Student s);
 private:
 	string id;
 	std::vector<int> choices;

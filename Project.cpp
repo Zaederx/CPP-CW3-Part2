@@ -36,11 +36,11 @@ Project::~Project() {
 //
 //}
 
-const string& Project::getProjectId() const {
+int Project::getProjectId() {
 		return projectId;
 }
 
-void Project::setProjectId(const string &projectId) {
+void Project::setProjectId(int projectId) {
 		this->projectId = projectId;
 }
 

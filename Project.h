@@ -21,9 +21,9 @@ public:
 	Project& operator=(const Project &other);
 	Project& operator=(Project &&other);
 
-	const string& getProjectId() const;
+	int getProjectId();
 
-	void setProjectId(const string &projectId);
+	void setProjectId(int projectId);
 
 	const string& getSupervisorId() const;
 
@@ -50,7 +50,7 @@ public:
 	}
 
 private:
-	string projectId;
+	int projectId;
 	string supervisorId;
 	int svMult;//supervisorMutiplicity
 	string title;

@@ -66,7 +66,7 @@ int main (int argc, char const *argv[]) {
 		Project p;
 
 		//TODO may have to change these to constatns
-		string projId; //project id
+		int projId; //project id
 		string svId; // supervisor id
 		int mul; //multiplicity
 		string title;

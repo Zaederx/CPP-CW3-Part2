@@ -38,7 +38,7 @@ Student::Student() {
 //	// TODO Auto-generated method stub
 //}
 
-ostream& operator<<(ostream os, const Student& s) {
+ostream& operator<<(ostream& os, const Student& s) {
 	os << s.getId() << " " << s.getAssignedProject();
 	return os;
 }
