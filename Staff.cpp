@@ -35,23 +35,28 @@ Staff::Staff() {
 //	// TODO Auto-generated method stub
 //
 //}
-
+void Staff::setId(string id) {
+	this->id = id;
+}
+string Staff::getId() {
+	return id;
+}
 void Staff::setSupervisionLoad(int load) {
 	supervisionLoad = load;
 }
 int Staff::getSupervisionLoad(){
 	return supervisionLoad;
 }
-map<string,int> Staff::getProjects() {
-	return projects;
-}
-
-void Staff::setProjects(std::map projects) {
-	this->projects = projects;
-}
-
-void Staff::setProject(string project, int multiplicity) {
-	projects[project] = multiplicity;
-}
+//map<string,int> Staff::getProjects() {
+//	return projects;
+//}
+//
+//void Staff::setProjects(std::map projects) {
+//	this->projects = projects;
+//}
+//
+//void Staff::setProject(string project, int multiplicity) {
+//	projects[project] = multiplicity;
+//}
 
 

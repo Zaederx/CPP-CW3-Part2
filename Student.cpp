@@ -42,7 +42,7 @@ std::vector Student::getChoices () {
 }
 
 void Student::setChoice(int i, int choice) {
-	choices[i] = choice;
+	choices[i-1] = choice;
 }
 
 

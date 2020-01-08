@@ -19,15 +19,19 @@ public:
 	Staff& operator=(const Staff &other);
 	Staff& operator=(Staff &&other);
 
+	void setId(string id);
+	string getId();
+
 	void setSupervisionLoad(int load);
 	int getSupervisionLoad();
-	map<string,int> getProjects();
-	void setProjects(std::map projects);
-	void setProject(string project, int multiplicity);
+
+//	map<string,int> getProjects();
+//	void setProjects(std::map projects);
+//	void setProject(string project, int multiplicity);
 private:
 	string id;
 	int supervisionLoad;
-	map<string,int> projects;
+//	map<string,int> projects;
 };
 
 #endif /* STAFF_H_ */

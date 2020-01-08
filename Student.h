@@ -18,11 +18,20 @@ public:
 	Student& operator=(const Student &other);
 	Student& operator=(Student &&other);
 
+	string getId() {
+		return id;
+	}
+
+	void setId(string id) {
+		this->id = id;
+	}
 
 	std::vector getChoices ();
+
 	void setChoice(int i, int choice);
 private:
-std::vector choices;
+	string id;
+	std::vector choices;
 
 };
 
