@@ -4,7 +4,7 @@
  *  Created on: 8 Jan 2020
  *      Author: zacharyishmael
  */
-#include <string.h>
+#include <string>
 #include <map>
 using namespace std;
 #ifndef STAFF_H_

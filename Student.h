@@ -4,6 +4,7 @@
  *  Created on: 7 Jan 2020
  *      Author: zacharyishmael
  */
+#include<string>
 #include <vector>
 using namespace std;
 #ifndef STUDENT_H_
@@ -26,7 +27,7 @@ public:
 		this->id = id;
 	}
 
-	std::vector getChoices ();
+	std::vector<int> getChoices ();
 
 	void setChoice(int preferenceNum, int choice);
 	int getChoice(int preferenceNum);
@@ -39,9 +40,10 @@ public:
 		this->assignedProject = assignedProject;
 	}
 
+	friend ostream& operator<<(ostream os, const Student s);
 private:
 	string id;
-	std::vector choices;
+	std::vector<int> choices;
 	int assignedProject;
 
 };

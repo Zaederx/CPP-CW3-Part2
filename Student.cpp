@@ -7,7 +7,8 @@
 
 #include "Student.h"
 #include <vector>
-
+#include <iostream>
+using namespace std;
 
 Student::Student() {
 	// TODO Auto-generated constructor stub
@@ -37,12 +38,12 @@ Student::Student() {
 //	// TODO Auto-generated method stub
 //}
 
-friend ostream& operator<<(ostream os, const Student s) {
+ostream& operator<<(ostream os, const Student& s) {
 	os << s.getId() << " " << s.getAssignedProject();
 	return os;
 }
 
-std::vector Student::getChoices () {
+vector<int> Student::getChoices () {
 	return choices;
 }
 

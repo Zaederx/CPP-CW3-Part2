@@ -24,19 +24,19 @@ CXXFLAGS = -O0 -g3 -std=c++14
 
 # This simply allows "make all" to work
 All: all
-all: main Staff.o Project.o Students.o
+all: main
 
 # In this more complicated example, there are many .cpp and .h files.
 # All but one are compiled into its respective .o file (object file) using
 # the -c flag.
 # The final executable links all these object files together
-main: main.cpp
+main: main.cpp Staff.o Project.o Student.o
 	$(CXX) $(CXXFLAGS) main.cpp Staff.o Project.o Student.o -o main
 
 Staff.o:	Staff.cpp Staff.h
 	$(CXX) $(CXXFLAGS) -c Staff.cpp -o Staff.o
 
-Project.o: Project.ccp Project.o
+Project.o: Project.cpp Project.h
 	$(CXX) $(CXXFLAGS) -c Project.cpp -o Project.o
 
 Student.o: Student.cpp Student.h

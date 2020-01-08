@@ -31,9 +31,9 @@ void allocate (std::vector<Staff> staff, std::vector<Project> projects, std::vec
 }
 
 void printAllocations (vector<Student> students) {
-
+	ofstream file("alloc.txt");
 	for (Student s: students ) {
-		cout << s;
+		file << s << endl;
 	}
 
 }
@@ -103,6 +103,8 @@ int main (int argc, char const *argv[]) {
 		allocate (staffList, projectList, studentList);
 
 		printAllocations(studentList);
+
+
 	}
 
 }
