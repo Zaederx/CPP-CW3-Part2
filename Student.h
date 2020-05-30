@@ -6,6 +6,7 @@
  */
 #include<string>
 #include <vector>
+#include <ostream>
 using namespace std;
 #ifndef STUDENT_H_
 #define STUDENT_H_
@@ -40,7 +41,7 @@ public:
 		this->assignedProject = assignedProject;
 	}
 
-	friend ostream& operator<<(ostream& os, const Student s);
+	friend std::ostream& operator<<(std::ostream& os, const Student& s);
 private:
 	string id;
 	std::vector<int> choices;

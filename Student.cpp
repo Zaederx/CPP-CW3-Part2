@@ -38,7 +38,7 @@ using namespace std;
 //	// TODO Auto-generated method stub
 //}
 
-ostream& operator<<(ostream& os, const Student& s) {
+std::ostream& operator<<(std::ostream& os, const Student& s) {
 	os << s.getId() << " " << s.getAssignedProject();
 	return os;
 }
